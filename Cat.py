@@ -55,3 +55,9 @@ class Game:
         print(f"You are grooming {self.name}...")
         self.enjoyment += 20
         print(f"{self.name} looks happier now!")
+    def train(self):
+        print(f"{self.name} is training...")
+        self.stamina += 20
+        if self.stamina > 100:
+            self.stamina = 100
+            print(f"{self.name}'s stamina increased! Current stamina: {self.stamina}")
