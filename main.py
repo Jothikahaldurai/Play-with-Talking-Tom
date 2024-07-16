@@ -18,7 +18,7 @@ def main():
                     else:
                         print("Invalid food choice.")
                 elif action == 'play':
-                    play_choice = input(f"What do you want to play with {my_cat.name}? (ball/mud/toys): ").strip().lower()
+                    play_choice = input(f"What do you want to play with {my_cat.name}? (ball/mud/toys/jump/run): ").strip().lower()
                     my_cat.play(play_choice)
                 elif action == 'nap':
                     my_cat.sleep()
