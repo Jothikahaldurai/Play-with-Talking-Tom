@@ -21,6 +21,14 @@ class Game:
                 print(f"{self.name} is playing with toys!")
                 self.stamina -= 25
                 self.enjoyment += 20
+            elif play_type == 'jump': #Added new method
+                print(f"{self.name} is jumping around!")
+                self.stamina -= 15
+                self.enjoyment += 10
+            elif play_type == 'run':   #Added new method
+                print(f"{self.name} is running!")
+                self.stamina -= 25
+                self.enjoyment += 15    
             else:
                 print("Invalid play type.")
         else:
