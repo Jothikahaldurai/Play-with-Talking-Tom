@@ -55,3 +55,13 @@ class Game:
         print(f"You are grooming {self.name}...")
         self.enjoyment += 20
         print(f"{self.name} looks happier now!")
+        
+    def bathe(self):
+        if self.stamina >= 10:
+            print(f"You are bathing {self.name}...")
+            self.enjoyment += 25
+            self.stamina -= 10
+            print(f"{self.name} feels refreshed!")
+        else:
+            print(f"{self.name} doesn't have enough stamina for a bath!")
+
