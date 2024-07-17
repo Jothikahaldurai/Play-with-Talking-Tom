@@ -28,6 +28,8 @@ def main():
                     my_cat.talk()
                 elif action == 'groom':
                     my_cat.groom()
+                elif action == 'dance':
+                    my_cat.dance()
                 elif action == 'exit':
                     print("Exiting the game. Have a nice day!")
                     return
